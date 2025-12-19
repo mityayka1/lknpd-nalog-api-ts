@@ -19,7 +19,7 @@ import {
   IncomeClient,
   IncomeService,
   SavedTokens,
-} from './types';
+} from './types.js';
 
 /**
  * Ошибка API налоговой
@@ -584,7 +584,7 @@ export class NalogApi {
     };
 
     const totalAmount = services.reduce(
-      (sum, s) => sum + s.amount * (s.quantity || 1),
+      (sum: number, s: IncomeService) => sum + s.amount * (s.quantity || 1),
       0
     );
 
@@ -594,7 +594,7 @@ export class NalogApi {
       paymentType,
       ignoreMaxTotalIncomeRestriction,
       client: incomeClient,
-      services: services.map((s) => ({
+      services: services.map((s: IncomeService) => ({
         name: s.name,
         amount: String(s.amount),
         quantity: s.quantity || 1,

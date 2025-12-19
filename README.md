@@ -1,8 +1,10 @@
 # lknpd-nalog-api-ts
 
 [![npm version](https://img.shields.io/npm/v/lknpd-nalog-api-ts.svg)](https://www.npmjs.com/package/lknpd-nalog-api-ts)
+[![CI](https://github.com/mityayka1/lknpd-nalog-api-ts/actions/workflows/ci.yml/badge.svg)](https://github.com/mityayka1/lknpd-nalog-api-ts/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/mityayka1/lknpd-nalog-api-ts/branch/main/graph/badge.svg)](https://codecov.io/gh/mityayka1/lknpd-nalog-api-ts)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg)](https://nodejs.org/)
 
 TypeScript клиент для работы с API lknpd.nalog.ru (Мой налог) — формирование и отмена чеков для самозанятых.
 
@@ -308,7 +310,7 @@ try {
 
 ## Требования
 
-- Node.js >= 18.0.0
+- Node.js >= 20.0.0
 - Регистрация как самозанятый в приложении "Мой налог"
 
 ## Лицензия

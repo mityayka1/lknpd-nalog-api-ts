@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import * as readline from 'readline';
-import { NalogApi } from '../NalogApi';
+import { NalogApi } from '../NalogApi.js';
 
 const rl = readline.createInterface({
   input: process.stdin,
