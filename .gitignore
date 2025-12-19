@@ -7,3 +7,4 @@ dist/
 *.tgz
 session-token.json
 src/test.ts
+coverage/
