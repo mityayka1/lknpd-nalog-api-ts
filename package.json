@@ -1,0 +1,50 @@
+{
+  "name": "lknpd-nalog-api-ts",
+  "version": "1.0.0",
+  "description": "TypeScript клиент для API lknpd.nalog.ru (Мой налог) - формирование и отмена чеков для самозанятых",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "lknpd-authorize": "dist/cli/authorize.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch",
+    "authorize": "npx tsx src/cli/authorize.ts"
+  },
+  "keywords": [
+    "nalog",
+    "moy-nalog",
+    "lknpd",
+    "самозанятый",
+    "npd",
+    "налог",
+    "чек",
+    "receipt",
+    "fns",
+    "фнс",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
