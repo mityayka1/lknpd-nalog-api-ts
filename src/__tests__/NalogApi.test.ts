@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { NalogApi, NalogApiError } from '../NalogApi';
-import { IncomeType, PaymentType, CancelReason } from '../types';
+import { NalogApi, NalogApiError } from '../NalogApi.js';
+import { IncomeType, PaymentType, CancelReason } from '../types.js';
 import * as fs from 'fs';
 import * as path from 'path';
 

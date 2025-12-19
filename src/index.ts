@@ -1,4 +1,4 @@
-export { NalogApi, NalogApiError, default } from './NalogApi';
+export { NalogApi, NalogApiError, default } from './NalogApi.js';
 export {
   // Enums
   IncomeType,
@@ -26,4 +26,4 @@ export {
   TokenResponse,
   UserInfo,
   ApiError,
-} from './types';
+} from './types.js';
