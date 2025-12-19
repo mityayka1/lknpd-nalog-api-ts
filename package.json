@@ -2,6 +2,7 @@
   "name": "lknpd-nalog-api-ts",
   "version": "1.0.0",
   "description": "TypeScript клиент для API lknpd.nalog.ru (Мой налог) - формирование и отмена чеков для самозанятых",
+  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
