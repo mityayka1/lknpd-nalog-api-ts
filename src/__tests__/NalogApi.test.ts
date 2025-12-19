@@ -453,7 +453,7 @@ describe('NalogApi', () => {
       expect(api.getAuthState().refreshToken).toBe('saved-refresh-token');
     });
 
-    it('should return false when token file does not exist', () => {
+    it('should not set accessToken when token file does not exist', () => {
       vi.mocked(fs.existsSync).mockReturnValue(false);
 
       const api = new NalogApi({ saveToken: true });
@@ -461,7 +461,7 @@ describe('NalogApi', () => {
       expect(api.getAuthState().accessToken).toBeNull();
     });
 
-    it('should return false when saved tokens have no refreshToken', () => {
+    it('should not set refreshToken when saved tokens have empty refreshToken', () => {
       const savedTokens = {
         accessToken: 'saved-access-token',
         refreshToken: '',
